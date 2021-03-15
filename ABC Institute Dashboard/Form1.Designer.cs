@@ -29,11 +29,13 @@ namespace ABC_Institute_Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.btnGenerateTimetable = new Guna.UI.WinForms.GunaButton();
+            this.btnStatistics = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -42,22 +44,14 @@ namespace ABC_Institute_Dashboard
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
-            this.gunaPanel1.Controls.Add(this.guna2Panel1);
+            this.gunaPanel1.Controls.Add(this.btnStatistics);
+            this.gunaPanel1.Controls.Add(this.btnGenerateTimetable);
             this.gunaPanel1.Controls.Add(this.gunaPanel2);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(250, 729);
             this.gunaPanel1.TabIndex = 0;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 100);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(250, 180);
-            this.guna2Panel1.TabIndex = 1;
             // 
             // gunaPanel2
             // 
@@ -89,6 +83,58 @@ namespace ABC_Institute_Dashboard
             this.gunaPanel3.Size = new System.Drawing.Size(1094, 729);
             this.gunaPanel3.TabIndex = 1;
             // 
+            // btnGenerateTimetable
+            // 
+            this.btnGenerateTimetable.AnimationHoverSpeed = 0.07F;
+            this.btnGenerateTimetable.AnimationSpeed = 0.03F;
+            this.btnGenerateTimetable.BaseColor = System.Drawing.Color.Transparent;
+            this.btnGenerateTimetable.BorderColor = System.Drawing.Color.Black;
+            this.btnGenerateTimetable.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnGenerateTimetable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenerateTimetable.FocusedColor = System.Drawing.Color.Empty;
+            this.btnGenerateTimetable.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGenerateTimetable.ForeColor = System.Drawing.Color.Black;
+            this.btnGenerateTimetable.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerateTimetable.Image")));
+            this.btnGenerateTimetable.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnGenerateTimetable.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnGenerateTimetable.Location = new System.Drawing.Point(0, 100);
+            this.btnGenerateTimetable.Name = "btnGenerateTimetable";
+            this.btnGenerateTimetable.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnGenerateTimetable.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnGenerateTimetable.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnGenerateTimetable.OnHoverImage = null;
+            this.btnGenerateTimetable.OnPressedColor = System.Drawing.Color.Black;
+            this.btnGenerateTimetable.Padding = new System.Windows.Forms.Padding(10);
+            this.btnGenerateTimetable.Size = new System.Drawing.Size(250, 40);
+            this.btnGenerateTimetable.TabIndex = 1;
+            this.btnGenerateTimetable.Text = "Generate Timetable";
+            // 
+            // btnStatistics
+            // 
+            this.btnStatistics.AnimationHoverSpeed = 0.07F;
+            this.btnStatistics.AnimationSpeed = 0.03F;
+            this.btnStatistics.BaseColor = System.Drawing.Color.Transparent;
+            this.btnStatistics.BorderColor = System.Drawing.Color.Black;
+            this.btnStatistics.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnStatistics.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStatistics.FocusedColor = System.Drawing.Color.Empty;
+            this.btnStatistics.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStatistics.ForeColor = System.Drawing.Color.Black;
+            this.btnStatistics.Image = null;
+            this.btnStatistics.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnStatistics.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnStatistics.Location = new System.Drawing.Point(0, 140);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnStatistics.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnStatistics.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnStatistics.OnHoverImage = null;
+            this.btnStatistics.OnPressedColor = System.Drawing.Color.Black;
+            this.btnStatistics.Padding = new System.Windows.Forms.Padding(10);
+            this.btnStatistics.Size = new System.Drawing.Size(250, 40);
+            this.btnStatistics.TabIndex = 2;
+            this.btnStatistics.Text = "Statistics";
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -113,8 +159,9 @@ namespace ABC_Institute_Dashboard
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
+        private Guna.UI.WinForms.GunaButton btnStatistics;
+        private Guna.UI.WinForms.GunaButton btnGenerateTimetable;
     }
 }
 
