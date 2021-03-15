@@ -2,7 +2,7 @@
 namespace ABC_Institute_Dashboard
 {
     partial class MainDashboard
-    {
+    {   //SANDINI'S FIRST COMMIT
         /// <summary>
         /// Required designer variable.
         /// </summary>
